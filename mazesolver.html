@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project: Maze Solver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1>Eric Bradshaw's Portfolio</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Navigate</a>
+								<ul>
+									<li><a href="aboutme.html">About Me</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li>
+										<a href="#">Projects</a>
+										<ul>
+											<li><a href="atracker.html">Attendance Tracker</a></li>
+											<li><a href="mazesolver.html">Maze Solver</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><span id="space"></span></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Maze Solver</h2>
+						<p>A depth-first maze solving application.</p>
+					</header>
+					<div class="box">
+						<div class="row">
+							<div class="row-6 row-12-mobilep">
+								<h3>Purpose</h3>
+								<p>
+                                    Maze Solver is an application that reads text based mazes from a file. The contents of the file has maze representations
+                                    for each maze as follows: row count, column count, and a matrix of the maze where 0 is a "wall", 1 is a "path", S is 
+                                    "start" and E is "end". Solved mazes replace 1s with @s, representing the solution path.<br />
+                                    The project was a lesson on utilizing data structures to programatically solve mazes or determine they are unsolvable.
+                                    It also improved my understanding of Java at the time, specifcally in using JavaFX to create the GUI. Though this was a
+                                    class project, I believe that it represents a good understanding of programming theory with data structures and algorithms.<br />
+                                    The system uses a linked list stack and a automatically resizing set to solve the maze. These classes were constructed myself from scratch.
+                                    Mazes are solved by the system using a depth-first search to find the next available path. When given more than one path option, all
+                                    options are stored in the stack. Upon finding a dead-end, the system will pop the next available path from the stack and follow that path.
+                                    If it is discovered no paths reach the end, the maze is deemed unsolvable. Otherwise, the path that leads to the end of the maze will be marked
+                                    as part of the solution path and the maze will be rebuilt to represent this path.
+                                </p>
+							</div>
+                            <div class="row-6 row-12-mobilep">
+								<h3>Demo</h3>
+                                <div id="ms-demo-text">
+                                    <div>One of the 10 mazes from the input file. This is the maze before the system solves it.</div>
+                                    <div>The same maze after "find path" button is pressed.</div>
+                                    <div>Another maze, this one shows the limitations of depth-first algorithms.</div>
+                                </div>
+                                <div id="ms-demo-images" class="row-6 row-12-mobilep">
+                                    <img src="images/ms_maze_unsolved.jpg">
+                                    <img src="images/ms_maze_solved.jpg">
+                                    <img src="images/ms_maze_two.jpg">
+                                </div>
+								
+							</div>
+							<div class="row-6 row-12-mobilep">
+								
+                                <h3>Professor Reception</h3>
+                                <p>My professor was impressed with the extra care that went into my code to discourage bugs, such as creating methods
+                                    that consider if the start position was not in the first row but in the center and reserving some computational effort
+                                    in the algorithm used when finding a dead-end. Project grade: >100%, A+.
+                                </p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
