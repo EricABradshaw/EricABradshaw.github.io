@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ericabradshaw.github.io/static/css/main.d5289b2f.css",
+    "main.js": "/ericabradshaw.github.io/static/js/main.83dcb9dc.js",
+    "index.html": "/ericabradshaw.github.io/index.html",
+    "main.d5289b2f.css.map": "/ericabradshaw.github.io/static/css/main.d5289b2f.css.map",
+    "main.83dcb9dc.js.map": "/ericabradshaw.github.io/static/js/main.83dcb9dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5289b2f.css",
+    "static/js/main.83dcb9dc.js"
+  ]
+}
