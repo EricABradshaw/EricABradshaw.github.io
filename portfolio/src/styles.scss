@@ -1,0 +1,35 @@
+$evening-blue: #244855;
+$cloudy-blue: #bccece;
+$sharp-red: #e64833;
+$vintage-clay: #874f41;
+$fire-smoke: #fbe9d0;
+$white: #efefe0;
+$black: #0a0a1f;
+
+.bg-main {
+    background-color: $evening-blue;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+.port-container > * {
+    background-color: $white;
+    height: fit-content;
+
+    .col-sm-12.col-xl-5 {
+        height: fit-content;
+    }
+
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+
+    div p {
+        padding-bottom: 2%;
+    }
+}
+
+.col-sm-12.col-xl-5:hover {
+    background-color: white;
+}
