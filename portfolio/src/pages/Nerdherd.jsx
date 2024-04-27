@@ -12,7 +12,7 @@ const Nerdherd = () => {
                     <Image src='/NerdHerd/nerdherd_createherd.gif' alt='Demonstration GIF of Nerd-Herd' className='col-12 p-0'/>
                 </Col>
                 <Col xs={12} lg={6}>
-                    <h5>Create a Gathering</h5>
+                    <h5>Create a Gathering:</h5>
                     <Image src='/NerdHerd/nerdherd_eventcreate.gif' alt='Demonstration GIF of Nerd-Herd' className='col-12 p-0'/>
                 </Col>
                 <Col xs={12} lg={6}>

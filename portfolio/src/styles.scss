@@ -33,3 +33,21 @@ $black: #0a0a1f;
 .col-sm-12.col-xl-5:hover {
     background-color: white;
 }
+
+.image-container {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cropped {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-card {
+    border: 6px solid $vintage-clay;
+    background: $fire-smoke;
+    border-radius: 5vh;
+}
