@@ -17,7 +17,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Resume />}/>
+          <Route index element={<About />}/>
           <Route path="resume" element={<Resume />}/>
           <Route path="about" element={<About />}/>
           <Route path="portfolio" element={<Portfolio />}/>
