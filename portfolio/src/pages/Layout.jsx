@@ -19,11 +19,11 @@ const Layout = () => {
 
     return (
         <>
-            <Navbar className='bg-light border-bottom' style={{ height: `${navHeight}px` }} expand="xxl">
+            <Navbar className='bg-light border-bottom' style={{ height: `${navHeight}px` }} expand="lg">
                 <Navbar.Brand as={Link} to="/" className='ms-5'>Eric Bradshaw</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className='me-3'/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className='bg-light w-50 float-end mt-1 p-3 me-3 border border-dark border-1 d-flex d-xxl-none'>
+                    <Nav className='bg-light w-50 float-end mt-1 p-3 me-3 d-flex d-xxl-none'>
                         <Nav.Link as={Link} to="/about">About Me</Nav.Link>
                         <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
                         <NavDropdown title='Portfolio'>
@@ -34,6 +34,8 @@ const Layout = () => {
                             <NavDropdown.Item as={Link} to="/portfolio/nerd-herd">Nerd-Herd</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item as={Link} to="/portfolio/attendancetracker">Attendance Tracker</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="https://github.com/EricABradshaw"><GitHubIcon/> My GitHub</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="https://github.com/EricABradshaw/EricABradshaw.github.io"><GitHubIcon/> Portfolio GitHub</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav className='bg-light w-25 float-end mt-1 p-3 me-3 d-none d-xxl-flex'>

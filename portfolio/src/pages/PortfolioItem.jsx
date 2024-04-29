@@ -4,7 +4,7 @@ import { Col, Image } from 'react-bootstrap'
 
 const PortfolioItem = ({link, image, title, summary, description}) => {
     return (
-        <Col sm={12} xl={5} style={{minHeight: '275px'}}
+        <Col sm={12} xl={5} style={{minHeight: '275px', borderRadius: '5vh 0 5vh 0'}}
                 className='border border-4 border-secondary p-0 m-0 my-4 d-flex justify-content-around'>
             <Link to={link}>
                 <div style={{height:'100%'}} className='m-0 p-0'>

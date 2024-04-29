@@ -79,7 +79,7 @@ const Portfolio = () => {
                 <PortfolioItem 
                     title="My Portfolio" 
                     link="/"
-                    summary={["Made from the ground up using React techniques", "Wanted to train my Web Development skills", "Uses React for the frontend framework and Sass for the styling", "I am avoiding the use of templates"]}
+                    summary={["Made from the ground up using React", "Wanted to train my Web Development skills", "Uses React for the frontend framework and Sass for the styling", "Purposefully not using templates to facilitate learning"]}
                     description={portfolioDescription} 
                 />
             </Row>

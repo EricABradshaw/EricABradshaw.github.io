@@ -4,7 +4,7 @@ import { Row, Col, Container, Image } from 'react-bootstrap'
 const About = () => {
     return (
         <Row className='bg-main m-0 p-3' style={{height: 'fit-content'}}>
-            <Row className='col-12 d-flex justify-content-around' style={{height: 'fit-content'}}>
+            <Container className='col-12 row mx-auto justify-space-between p-2 ms-0' style={{height: 'fit-content'}}>
                 <Col xs={12} className='about-card py-2 px-3' style={{height: 'fit-content'}}>
                     <h2 className='text-center'>Hello!</h2>
                     <h5 className='text-center'>
@@ -18,10 +18,10 @@ const About = () => {
                         drive, passion for everything I do, and a fantastic work ethic.
                     </h5>
                 </Col>
-            </Row>
-            <Row className='col-12 d-flex justify-content-around' style={{height: 'fit-content'}}>
+            </Container>
+            <Container className='col-12 row mx-auto justify-space-between p-2 ms-0' style={{height: 'fit-content'}}>
                 <Container className='about-card py-2 px-3'>
-                    <h2>Active Learner, Always Learning</h2>
+                    <h3>Active Learner, Always Learning</h3>
                     <p>Graduating does not mean I am done learning. I have projects planned, books to read, and topics to study. I understand that getting
                         a degree in Computer Science means a lifetime of learning, and nothing excites me more than that.
                     </p>
@@ -39,12 +39,12 @@ const About = () => {
                         </Col>
                     </div>
                 </Container>
-            </Row>
+            </Container>
             <Container className='col-12 col-lg-6 row mx-auto justify-space-between p-2 ms-0' style={{height: 'fit-content'}}>
                 <Col xs={12} className='about-card'>
-                    <h2 className='my-3 col-12' style={{height: 'fit-content'}}>Skills</h2>
+                    <h3 className='my-3 col-12' style={{height: 'fit-content'}}>Skills</h3>
                     <Row className='d-flex justify-content-around'>
-                        <Col xs={4} style={{height: 'fit-content'}}>
+                        <Col xs={6} lg={4} style={{height: 'fit-content'}}>
                             <h4 className='text-center'>Languages</h4>
                             <ul>
                                 <li>Python</li>
@@ -55,7 +55,7 @@ const About = () => {
                                 <li>NoSQL (MongoDB)</li>
                             </ul>
                         </Col>
-                        <Col xs={4} style={{height: 'fit-content'}}>
+                        <Col xs={6} lg={4} style={{height: 'fit-content'}}>
                             <h4 className='text-center'>Concepts</h4>
                             <ul>
                                 <li>Data Structures</li>
@@ -66,8 +66,8 @@ const About = () => {
                                 <li>Database Administration</li>
                             </ul>
                         </Col>
-                        <Col xs={4} style={{height: 'fit-content'}}>
-                            <h4 className='text-center'>Frameworks/Libraries</h4>
+                        <Col xs={6} lg={4} style={{height: 'fit-content'}}>
+                            <h4 className='text-center'>Frameworks</h4>
                             <ul>
                                 <li>React.js</li>
                                 <li>Node.js/Express.js</li>
@@ -79,9 +79,9 @@ const About = () => {
                     </Row>
                 </Col>
             </Container>
-            <Container className='col-12 col-lg-5 row mx-auto justify-space-between p-2 ms-0' style={{height: 'fit-content'}}>
+            <Container className='col-12 col-lg-6 row mx-auto justify-space-between p-2 ms-0' style={{height: 'fit-content'}}>
                 <Col xs={12} className='about-card'>
-                    <h4 className='my-3 col-12' style={{height: 'fit-content'}}>Currently Interested In Learning/Researching: </h4>
+                    <h3 className='my-3 col-12' style={{height: 'fit-content'}}>Currently Interested In Learning/ Researching: </h3>
                     <ul>
                         <li>Machine Learning</li>
                         <li>Human-Computer Interaction</li>
