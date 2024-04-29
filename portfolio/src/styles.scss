@@ -51,3 +51,15 @@ $black: #0a0a1f;
     background: $fire-smoke;
     border-radius: 5vh;
 }
+
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        display: inline-block;
+        text-align: center;
+    }
+}

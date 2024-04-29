@@ -3,6 +3,7 @@ import { Outlet, Link } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import GitHubIcon from './GitHubIcon'
 
 const Layout = () => {
     const [navHeight, setNavHeight] = useState(80) 
@@ -46,6 +47,8 @@ const Layout = () => {
                             <NavDropdown.Item as={Link} to="/portfolio/nerd-herd">Nerd-Herd</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item as={Link} to="/portfolio/attendancetracker">Attendance Tracker</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="https://github.com/EricABradshaw"><GitHubIcon/> My GitHub</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="https://github.com/EricABradshaw/EricABradshaw.github.io"><GitHubIcon/> Portfolio GitHub</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
