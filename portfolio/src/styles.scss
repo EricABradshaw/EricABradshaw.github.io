@@ -13,7 +13,7 @@ $black: #0a0a1f;
 }
 
 .port-container > * {
-    background-color: $white;
+    background-color: white;
     height: fit-content;
 
     .col-sm-12.col-xl-5 {
@@ -31,7 +31,7 @@ $black: #0a0a1f;
 }
 
 .col-sm-12.col-xl-5:hover {
-    background-color: white;
+    background-color: darken($color: white, $amount: 14);
 }
 
 .image-container {
@@ -48,7 +48,7 @@ $black: #0a0a1f;
 
 .about-card {
     border: 6px solid #6c757d;
-    background: $white;
+    background: white;
     border-radius: 5vh;
 }
 
